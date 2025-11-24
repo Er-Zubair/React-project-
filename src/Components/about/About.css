@@ -1,0 +1,147 @@
+.about-section {
+  padding: 120px 0;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Left Side - Image */
+.about-left {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(74, 144, 226, 0.15);
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.about-left:hover .about-img {
+  transform: scale(1.08);
+}
+
+.about-img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 30px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: white;
+}
+
+.about-stats {
+  display: flex;
+  gap: 40px;
+}
+
+.stat h3 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin: 0;
+  color: #4a90e2;
+}
+
+.stat p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Right Side - Text */
+.about-right {
+  padding: 20px 0;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 24px;
+}
+
+.about-text.highlight {
+  background: linear-gradient(90deg, #4a90e2, #84b1f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.about-features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.feature .icon {
+  font-size: 2.2rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  
+  .about-left {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .about-img {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 80px 0;
+  }
+  
+  .about-stats {
+    gap: 25px;
+  }
+  
+  .stat h3 {
+    font-size: 2.2rem;
+  }
+  
+  .about-features {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .feature {
+    flex-direction: column;
+    text-align: center;
+    min-width: 120px;
+  }
+}

@@ -1,0 +1,40 @@
+/* App.css - Global layout tweaks */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Main container for consistent width & padding */
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Smooth scrolling & better focus outlines */
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, a {
+  transition: all 0.3s ease;
+}
+
+/* Optional: Add a little space after full-width sections */
+.about-section + .container > *:not(.about-section),
+.campus-section + .container > *:not(.campus-section) {
+  margin-top: 80px;
+}

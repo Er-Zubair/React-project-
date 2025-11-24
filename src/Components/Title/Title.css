@@ -1,0 +1,87 @@
+.title-section {
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.title-subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+  transition: all 0.4s ease;
+}
+
+.title-main {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.title-underline {
+  width: 80px;
+  height: 5px;
+  background-color: #4a90e2;
+  border-radius: 3px;
+  margin: 25px auto 0;
+  transition: all 0.4s ease;
+}
+
+/* Text Alignment */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+.text-left .title-underline,
+.text-right .title-underline {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Color Variants */
+.title-dark .title-subtitle { color: #4a90e2; }
+.title-dark .title-main { color: #222; }
+
+.title-light .title-subtitle { color: rgba(255, 255, 255, 0.8); }
+.title-light .title-main { color: white; }
+.title-light .title-underline { background-color: #ffffff; }
+
+/* Hover Animation (optional subtle effect) */
+.title-section:hover .title-underline {
+  width: 120px;
+  background-color: #357abd;
+}
+
+.title-light:hover .title-underline {
+  background-color: white;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .title-main {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-main {
+    font-size: 2.4rem;
+  }
+  .title-subtitle {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-main {
+    font-size: 2.1rem;
+  }
+  .title-section {
+    margin-bottom: 40px;
+  }
+}
